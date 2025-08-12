@@ -330,7 +330,7 @@ jobs:
     - name: 🤖 Run GitHub follower automation
       run: python github_follower_automation.py
       env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        GITHUB_TOKEN: ${{ secrets.PERSONAL_GITHUB_TOKEN }}
         GITHUB_USERNAME: ${{ github.repository_owner }}
         MAX_UNFOLLOWS_PER_RUN: ${{ vars.MAX_UNFOLLOWS_PER_RUN || '20' }}
         MAX_FOLLOWS_PER_RUN: ${{ vars.MAX_FOLLOWS_PER_RUN || '15' }}
