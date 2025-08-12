@@ -19,6 +19,7 @@ on:
         - follow_back
         - cleanup
         - stats_only
+
 jobs:
   github-follower-automation:
     runs-on: ubuntu-latest
